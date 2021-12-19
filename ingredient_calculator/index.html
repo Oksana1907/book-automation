@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор порции для тортика</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="section_title">
+            <h1 class="title">У тебя есть рецепт, но ты не знаешь сколько ингредиентов нужно именно для твоей формочки?
+                <br> Тогда ты на правильной страничке
+            </h1>
+            <div class="section_box">
+                <h2 class="section_box_title">
+                    Для начала предлагаю задать размеры вашей формы:
+                </h2>
+                <div class="section_content">
+                    <div class="box_item">
+                        <img class="box_img" src="img/square.png" alt="Квадратная форма для выпечки">
+                    </div>
+                    <div class="box_items">
+                        <div class="item-first">
+                            <input type="text" name="length_user" id="length_user"> Длина
+                        </div>
+                        <div class="item-second">
+                            <input type="text" name="width_user" id="width_user"> Ширина
+                        </div>
+                        <div class="item-third">
+                            <input type="text" name="height_user" id="height_user"> Высота
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section_box_title">
+                    А теперь внеси ингредиенты:
+                </h2>
+                <div class="box_list">
+                    <div class="list_item">
+                        <input type="text" name="product_eggs" id="product_eggs">
+                        <img class="item_img-eggs" src="img/eggs.png" alt="Яйца">
+                    </div>
+                    <div class="list_item">
+                        <input type="text" name="product_flour" id="product_flour">
+                        <img class="item_img-flour" src="img/flour.png" alt="Мука">
+                    </div>
+                    <div class="list_item">
+                        <input type="text" name="product_sugar" id="product_sugar">
+                        <img class="item_img-sugar" src="img/sugar.png" alt="Сахар">
+                    </div>
+                    <div class="list_item">
+                        <input type="text" name="product_salt" id="product_salt">
+                        <img class="item_img-salt" src="img/solt.png" alt="Соль">
+                    </div>
+                    <div class="list_item">
+                        <input type="text" name="product_bakingpowder" id="product_bakingpowder">
+                        <img class="item_img-bakingpowder" src="img/bakingpowder.png" alt="Разрыхлитель">
+                    </div>
+                    <div class="list_item">
+                        <input type="text" name="product_oil" id="product_oil">
+                        <img class="item_img-oil" src="img/oil.png" alt="Масло">
+                    </div>
+                </div>
+                <h2 class="section_box_title">
+                    Ну и осталься последний шаг... Напиши размеры формы, которые были указаны в рецепте. Мы же не хотим,
+                    чтобы у тебе не хватило теста или оно убежало ?
+                </h2>
+                <div class="section_content">
+                    <div class="box_item-cook">
+                        <img class="box_img" src="img/form.png" alt="Форма для выпечки">
+                    </div>
+                    <div class="box_items">
+                        <div class="item-first">
+                            <input type="text" name="length_cook" id="length_cook">
+                            Длина
+                        </div>
+                        <div class="item-second">
+                            <input type="text" name="width_cook" id="width_cook">
+                            Ширина
+                        </div>
+                        <div class="item-third">
+                            <input type="text" name="height_cook" id="height_cook">
+                            Высота
+                        </div>
+                    </div>
+                </div>
+                <input type="button" name="calculate" value="Расчитать" id="calculate">
+                <div class="section_list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="number_of_finished_products.js"></script>
+</body>
+
+</html>

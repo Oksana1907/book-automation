@@ -1,0 +1,148 @@
+body {
+    background-color: aqua;
+    background-image: url(img/fon.jpg);
+    background-repeat: repeat;
+}
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Smooch', cursive;
+}
+.title {
+    color: rgb(221, 84, 198);
+    font-size: 1.8rem;
+    padding-top: 2%;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.box_items,
+.section_box_title,
+.title,
+#product_eggs,
+#product_flour,
+#product_sugar,
+#product_salt,
+#product_bakingpowder,
+#product_oil,
+#width_cook,
+#height_cook,
+#length_cook,
+#width_user,
+#height_user,
+#length_user {
+    font-weight: bold;
+    -webkit-text-stroke: black 1px;
+}
+.section_content {
+    display: flex;
+    width: 100%;
+}
+.section_box_title {
+    color: darkcyan;
+    font-size: 1.5rem;
+    padding-left: 3%;
+    padding-bottom: 3%;
+
+}
+.box_item-cook,
+.box_item {
+    width: 350px;
+    height: 280px;
+    margin: 2% 2% 2% 20%;
+}
+.box_item-cook {
+    margin: 2% 1% 2% 10%;
+    width: 530px;
+    height: 320px;
+}
+.box_img {
+    width: 100%;
+    height: 100%;
+}
+.box_copy {
+    display: flex;
+    flex-direction: column;
+}
+.box_items {
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+}
+
+#width_cook,
+#height_cook,
+#length_cook,
+#width_user,
+#height_user,
+#length_user {
+    color: white;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 15%;
+}
+#product_eggs,
+#product_flour,
+#product_sugar,
+#product_salt,
+#product_bakingpowder,
+#product_oil {
+    color: white;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+
+}
+.box_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item_img-oil,
+.item_img-eggs {
+    width: 110px;
+    height: 70px;
+}
+.item_img-bakingpowder {
+    height: 120px;
+    width: 120px;
+}
+.item_img-salt,
+.item_img-sugar,
+.item_img-flour {
+    height: 110px;
+    width: 90px;
+}
+.list_item {
+    display: flex;
+    align-items: center;
+    margin: 2% 2% 2% 2%;
+}
+#calculate {
+    height: 50px;
+    width: 250px;
+    font-size: 1.8rem;
+    margin-left: 38%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.section_list {
+    background-image: url(img/list.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+.section_list>* {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-left: 23%;
+    padding-top: 17%;
+}
