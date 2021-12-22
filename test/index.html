@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+        }
+        .content_section {
+            width: 70%;
+            height: 310px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .content_img {
+            width: 100%;
+            height: 100%;
+        }
+        .content_form {
+            border: 2px rgb(170, 170, 202) solid;
+            margin: 0 auto;
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .content_logo {
+            font-size: 16px;
+            color: gainsboro;
+            width: 100%;
+        }
+        #salary {
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            margin: 0 100px 15px 100px;
+
+        }
+        .content_button {
+            background-color: cornflowerblue;
+            font-weight: bold;
+            height: 40px;
+            width: 100px;
+            border-radius: 80px;
+        }
+        #result {
+            width: 100%;
+            color: rgb(241, 104, 12);
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function render() {
+            
+            let salary = document.getElementById('salary').value;
+
+            function payrollPreparation(a) {
+                return a*0.195
+            };
+            const totalMoney = payrollPreparation(salary);
+            
+            const text = `
+            На руки вы сможете получить ${payrollPreparation()} грн.
+            `;
+            
+            totalMoney = document.getElementById('result').innerHTML = text;
+
+            // if (salary <=0) {
+            //     document.getElementById('inner').innerHTML =
+            // } else {
+            //     salaryImg(false)
+            // }
+
+            // function salaryImg(isRish) {
+            //     if (isRish) {
+            //         isRish.src = `http://oboi-dlja-stola.ru/file/9961/760x0/16:9/%D0%9F%D0%B0%D1%80%D0%B0-%D1%81-%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B0%D0%BC%D0%B8.jpg`
+            //     } else {
+            //         isRish.src = `https://ecotonkosti.ru/wp-content/uploads/2014/09/Kak-prozhit-nedelyu-do-zarplaty-bez-deneg.jpg`
+            //     }
+            // }
+            // document.getElementById('result').innerHTML = text;
+        };
+    </script>
+    <div class="wrapper">
+        <div class="content_section">
+            <img class="content_img" src="accounting.jpg" alt="Подсчет">
+        </div>
+        <div class="content_form">
+            <h1 class="content_logo">
+                Для расчета своей заработной платы после вычета налогов введите сумму:
+            </h1>
+            <input type="text" id="salary" name="name" value="1">
+            <button type="button" class="content_button" onclick="render()">
+                Рассчитать
+            </button>
+            <div id="result"></div>
+            
+        </div>
+        <div id="inner">
+
+        </div>
+
+    </div>
+</body>
+</html>
