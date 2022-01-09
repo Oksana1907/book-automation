@@ -65,7 +65,7 @@
             <h1 class="content_logo">
                 Для расчета своей заработной платы после вычета налогов введите сумму:
             </h1>
-            <input type="text" id="salary" name="name" value="1">
+            <input type="text" id="salary" name="name">
             <button type="button" class="content_button" onclick="render()">
                 Рассчитать
             </button>
@@ -82,13 +82,22 @@
             function payrollPreparation(a) {
                 return Math.floor(a*0.805)
             };
-            const totalMoney = payrollPreparation(salary);
-            
-            const text = `
-            На руки вы сможете получить ${totalMoney} грн.
-            `;
-            
-            totalMoney = document.getElementById('result').innerHTML = text;
+            let totalMoney = payrollPreparation(salary);
+
+            if (salary >0) {
+                let text = `
+                На руки вы сможете получить ${totalMoney} грн.
+                `;
+                totalMoney = document.getElementById('result').innerHTML = text;
+            } else {
+                document.getElementById("result").insertAdjacentHTML(
+                    "beforeend",
+                    `
+                    <div> Поле не должно быть пустым </div>
+                    `
+                    )
+
+            };
         };
     </script>
 </body>
