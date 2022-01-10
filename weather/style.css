@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+    background-image: url(img/weather_fon.jpg);
+    background-repeat: repeat;
+    font-family: 'The Nautigal', cursive;
+}
+#app {
+    background-color: white;
+    margin:  auto;
+    width: 35%;
+}
+.greetings {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
