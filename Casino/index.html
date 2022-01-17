@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #bet-form {display: none}
+    #bet-result {display: none}
+    #bet-point {display: none}
+  </style>
+  <main>
+    <header>
+      Casino
+    </header>
+    <!--   Section for betting -->
+    <section id="bet-form">
+      <h1>Your Balance: <strong id="initial_balance">500</strong><strong>$</strong></h1>
+      <form>
+        <div>
+          <input type="text" placeholder="Place a bet" id="bet">          
+        </div>
+        <div>
+          <button type="button" onclick="rollTheDiceHandler()">Roll the dice</button>
+        </div>
+      </form>    
+    </section>
+    <!--   Section for result -->
+    <section id="bet-result">
+      <div id="resultInfo">    
+        <h1>Your Balance: <strong id="update_balance">500</strong><strong>$</strong></h1>
+        <p>On dices: <strong id="dice1result">4</strong>, <strong id="dice2result">4</strong></p>
+        <p id="resultText"></p>      
+      </div>
+      <form>      
+          <button type="button" id="betRsltBtn" onclick="goBackHandler()">Try more</button>
+      </form>    
+    </section>
+    <!--   Section for point -->
+    <section id="bet-point">
+      <div id="resultBetInfo">
+        <h1>Your bet: <strong>50$</strong></h1>
+        <p>On dices: <strong id="dice1result">1</strong>, <strong id="dice2result">2</strong></p>
+        <p>Your point <strong id="betAmount">3</strong></p>
+      </div>
+      <p>Keep playing</p>
+      <form>      
+          <button type="button" onclick="rollTheDiceHandler('point')">Roll the dice</button>
+      </form>    
+    </section>
+    <footer>
+      <img src="https://www.freeiconspng.com/thumbs/dice-png/dice-png-transparent-2012-at-1200-674-in-dice-15.png" alt="">
+    </footer>
+  </main>
+  <script src="form.js"></script>
