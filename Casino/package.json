@@ -1,7 +1,6 @@
 {
   "name": "casino",
   "version": "1.0.0",
-  "description": "",
   "main": "form.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,12 @@
   "bugs": {
     "url": "https://github.com/Oksana1907/book-automation/issues"
   },
-  "homepage": "https://github.com/Oksana1907/book-automation/tree/main#readme"
+  "homepage": "https://github.com/Oksana1907/book-automation/tree/main#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
 }
